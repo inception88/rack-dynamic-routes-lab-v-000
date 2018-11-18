@@ -6,7 +6,7 @@ class Application
     @@item = []
 
     if req.path.match(/items/)
-        if !@@item.include?
+      if @@items.exclude?(item)
           resp.status = 400
           resp.write "Error"
         else
