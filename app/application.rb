@@ -24,11 +24,8 @@ class Application
   end
 
   def search_items(item_name)
-    @@items.each do |item|
+    @@items.collect do |item|
       if item.name == item_name
-        item
-      else
-        ""
       end
     end
   end
