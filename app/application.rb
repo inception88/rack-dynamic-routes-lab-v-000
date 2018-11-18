@@ -3,7 +3,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
-
+    item = []
     if req.path.match(/items/)
         if !item.included?
           resp.status = 400
