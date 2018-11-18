@@ -24,14 +24,8 @@ class Application
   end
 
   def search_items(item_name)
-    @@items.collect do |item|
-      if item.name == item_name
-      end
+    @@items.select do |item|
+     item.name == item_name
     end
-  end
-end
-
-@@items.collect do |item|
-  if item.name == Figs
   end
 end
