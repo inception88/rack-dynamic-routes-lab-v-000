@@ -7,6 +7,7 @@ class Application
 
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
+      item = search_items(item_name)
       if !@@items.include?(item)
           resp.status = 400
           resp.write "Item not found"
@@ -22,7 +23,7 @@ class Application
     resp.finish
   end
 
-  def search_items
+  def search_items(item_name)
     @@items.each do |item|
       if item.name == item_name
         item
