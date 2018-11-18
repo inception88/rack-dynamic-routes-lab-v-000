@@ -30,3 +30,8 @@ class Application
     end
   end
 end
+
+@@items.collect do |item|
+  if item.name == Figs
+  end
+end
