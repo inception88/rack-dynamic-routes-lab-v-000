@@ -21,4 +21,7 @@ class Application
 
     resp.finish
   end
+
+  def search_items
+  end
 end
