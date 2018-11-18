@@ -6,6 +6,7 @@ class Application
     @@item = []
 
     if req.path.match(/items/)
+      item = req.path.split("/items/").last
       if @@items.exclude?(item)
           resp.status = 400
           resp.write "Error"
