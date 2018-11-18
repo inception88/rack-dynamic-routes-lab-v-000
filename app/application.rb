@@ -10,6 +10,7 @@ class Application
           resp.write "Error"
         else
         return item.price
+        end
     else
       resp.status = 404
     end
