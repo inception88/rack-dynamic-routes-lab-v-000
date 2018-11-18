@@ -29,5 +29,6 @@ class Application
         item
       else
       end
+    end
   end
 end
