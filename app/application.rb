@@ -28,6 +28,7 @@ class Application
       if item.name == item_name
         item
       else
+        ""
       end
     end
   end
