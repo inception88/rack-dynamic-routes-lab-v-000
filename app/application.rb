@@ -9,7 +9,7 @@ class Application
           resp.status = 400
           resp.write "Error"
         else
-        return item.price
+          return item.price
         end
     else
       resp.status = 404
