@@ -8,7 +8,7 @@ class Application
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
       item = search_items(item_name)[0]
-      if !item[0].empty?
+      if !item.empty?
           resp.status = 400
           resp.write "Item not found"
         else
