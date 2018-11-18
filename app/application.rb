@@ -6,7 +6,6 @@ class Application
 
     if req.path.match(/items/)
         return item.price
-      end
     else
       resp.status = 404
     end
